@@ -5,12 +5,18 @@
   "dependencies": {
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
-    "react-scripts": "1.1.5"
+    "react-scripts": "1.1.5",
+    "serve": "^10.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "now-start": "serve --single ./build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "now"
+  },
+  "devDependencies": {
+    "server": "^1.0.18"
   }
 }
